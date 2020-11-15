@@ -1,0 +1,17 @@
+@import url(./__buttons/header__buttons.css);
+@import url(./__info/header__info.css);
+@import url(./__logo/header__logo.css);
+@import url(./__menu/header__menu.css);
+@import url(./__phone/header__phone.css);
+@import url(./__total-cats/header__total-cats.css);
+
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.5)),
+  url(../../images/header-bg.jpg);
+  max-height: 15.75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Webpack</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header">
+      <nav class="header__menu">
+        <img class="header__logo" src="<%=require('./images/logo.png').default%>" alt="logo picture"></img>
+        <ul class="heared__buttons">
+          <li class="header__button">
+            <a class="button button__main" href="#">Main</a>
+          </li>
+          <li class="header__button">
+            <a class="button button__gallery" href="#">Gallery</a>
+          </li>
+          <li class="header__button">
+            <a class="button button__news" href="#">News</a>
+          </li>
+          <li class="header__button">
+            <a class="button button__profile" href="#">Profile</a>
+          </li>
+        </ul>
+        <div class="header__info">
+          <a class="header__phone" href="#">+544 3490 00000</a>
+          <p class="button">Звони скорее!</p>
+        </div>
+      </nav>
+      <h1 class="header__total-cats">Найдено 349 котов</h1>
+    </header>
+    <main class="search-result">
+      <div class="search-result__sort">
+
+      </div>
+    </main>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>
