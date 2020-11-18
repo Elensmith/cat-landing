@@ -1,0 +1,13 @@
+.footer__subtitle {
+padding-top: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 778px) {
+  .footer__subtitle   {
+    font-size: 1em;
+  }
+}

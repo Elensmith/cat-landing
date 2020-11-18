@@ -1,0 +1,20 @@
+.footer__box {
+  display: grid;
+  max-height: 19.5rem;
+  max-width: 73.75rem;
+  background-color: #1F2021;
+  margin: auto;
+  margin-bottom: 7.125rem;
+}
+
+@media screen and (max-width: 1048px) {
+  .footer__box {
+    max-height: 23.063rem;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .footer__box {
+    max-height: 62rem;
+  }
+}

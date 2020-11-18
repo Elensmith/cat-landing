@@ -1,0 +1,10 @@
+.search-result__sorted-by-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #000000;
+  background-color: transparent;
+  padding-right: 0.875rem;
+  outline: none;
+  cursor: pointer;
+}

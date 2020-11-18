@@ -1,0 +1,13 @@
+.button.button__footer {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  font-size: 0.875em;
+  width: 15.625rem;
+}
+
+@media screen and (max-width: 914px) {
+  .button.button__footer  {
+    grid-row-start: 2;
+    width: 19rem;
+  }
+}

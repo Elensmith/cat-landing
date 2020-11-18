@@ -1,0 +1,11 @@
+.search-result__sort {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.313rem;
+}
+
+@media screen and (max-width: 468px) {
+  .search-result__sort {
+    flex-direction: column;
+  }
+}

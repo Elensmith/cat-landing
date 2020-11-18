@@ -1,0 +1,14 @@
+.search-result__sorted-by {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  color: #000000;
+  padding-right: 3rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 694px) {
+  .search-result__sorted-by  {
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,6 @@
+.card__about {
+  display: flex;
+  flex-direction: row;
+  max-height: 2.5rem;
+  padding-top: 1.313rem;
+}

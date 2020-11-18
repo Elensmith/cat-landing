@@ -1,0 +1,14 @@
+.footer__other {
+  padding-top: 0.5rem;
+  max-height: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.125rem;
+  justify-content: start;
+}
+
+@media screen and (max-width: 778px) {
+  .footer__other  {
+    padding-bottom: 1.875rem;
+  }
+}

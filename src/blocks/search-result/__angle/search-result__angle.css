@@ -1,0 +1,16 @@
+.search-result__angle {
+  background-image: url(../../../images/sort.png);
+  background-repeat: no-repeat;
+  height: 0.938rem;
+  width: 0.938rem;
+  background-color: transparent;
+  align-self: center;
+  padding-right: 3.438rem;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (max-width: 694px) {
+  .search-result__angle {
+    padding-right: 1rem;
+  }
+}

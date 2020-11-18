@@ -1,0 +1,20 @@
+.footer__info {
+  margin: 5.688rem 0 5.25rem 5rem;
+  grid-column-start: 1;
+  max-width: 22.938rem;
+}
+
+@media screen and (max-width: 778px) {
+  .footer__info   {
+    max-width: 19rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .footer__info  {
+    margin: 3rem auto 3rem auto;
+    padding-right: 0;
+    text-align: center;
+  }
+}

@@ -6,3 +6,9 @@
   text-decoration: none;
   padding-bottom: 0.25rem;
 }
+
+@media screen and (max-width: 694px) {
+  .header__phone  {
+    font-size: 1rem;
+  }
+}

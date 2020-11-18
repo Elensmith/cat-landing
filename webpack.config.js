@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const nodeExternals = require("webpack-node-externals");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -9,7 +10,8 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 // подключаем плагин
 const isDev = process.env.NODE_ENV === "development";
 module.exports = {
-  entry: { main: "./src/index.js" },
+
+  entry: { main: "./src/js/index.js" },
   output: {
     path: path.resolve(__dirname, "dist"),
     // filename: (chunkData) => {
@@ -17,8 +19,10 @@ module.exports = {
     //     ? "[name].[hash].js"
     //     : "[name]/[name].[hash].js";
     // },
-    filename: "[name].[hash].js",
+    filename: "./[name].[hash].js",
   },
+  // target: 'node', // in order to ignore built-in modules like path, fs, etc.
+  // externals: [nodeExternals()],
   module: {
     rules: [
       {
@@ -45,7 +49,7 @@ module.exports = {
             ? { loader: "style-loader" }
             : {
               loader: MiniCssExtractPlugin.loader,
-              options: { publicPath: "../" },
+              options: { publicPath: "./" },
             },
           {
             loader: "css-loader",
@@ -54,19 +58,7 @@ module.exports = {
             },
           },
           {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [
-                  [
-                    'postcss-preset-env',
-                    {
-                      // Options
-                    },
-                  ],
-                ],
-              },
-            },
+            loader: "postcss-loader",
           },
         ],
       },
@@ -77,27 +69,27 @@ module.exports = {
           "file-loader?name=./images/[name].[ext]", // указали папку, куда складывать изображения
           {
             loader: "image-webpack-loader",
-            // options: {
-            //   mozjpeg: {
-            //     progressive: true,
-            //     quality: 65,
-            //   },
-            //   // optipng.enabled: false will disable optipng
-            //   optipng: {
-            //     enabled: false,
-            //   },
-            //   pngquant: {
-            //     quality: [0.65, 0.9],
-            //     speed: 4,
-            //   },
-            //   gifsicle: {
-            //     interlaced: false,
-            //   },
-            //   // the webp option will enable WEBP
-            //   webp: {
-            //     quality: 75,
-            //   },
-            // },
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75,
+              },
+            },
           },
         ],
       },
@@ -107,7 +99,7 @@ module.exports = {
     // new BundleAnalyzerPlugin(),
     new MiniCssExtractPlugin({
       //
-      filename: "[name].[hash].css",
+      filename: "./[name].[hash].css",
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

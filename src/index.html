@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Webpack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cats</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 
@@ -12,32 +13,85 @@
     <header class="header">
       <nav class="header__menu">
         <img class="header__logo" src="<%=require('./images/logo.png').default%>" alt="logo picture"></img>
-        <ul class="heared__buttons">
-          <li class="header__button">
-            <a class="button button__main" href="#">Main</a>
+        <ul class="header__buttons">
+          <li>
+            <a class="header__button" href="#">Main</a>
           </li>
-          <li class="header__button">
-            <a class="button button__gallery" href="#">Gallery</a>
+          <li>
+            <a class="header__button" href="#">Gallery</a>
           </li>
-          <li class="header__button">
-            <a class="button button__news" href="#">News</a>
+          <li>
+            <a class="header__button" href="#">News</a>
           </li>
-          <li class="header__button">
-            <a class="button button__profile" href="#">Profile</a>
+          <li>
+            <a class="header__button" href="#">Profile</a>
           </li>
         </ul>
         <div class="header__info">
           <a class="header__phone" href="#">+544 3490 00000</a>
-          <p class="button">Звони скорее!</p>
+          <p class="header__button">Звони скорее!</p>
         </div>
       </nav>
       <h1 class="header__total-cats">Найдено 349 котов</h1>
     </header>
     <main class="search-result">
       <div class="search-result__sort">
-
+        <h3 class="search-result__sorted-by">Сортировать по:</h3>
+        <button class="search-result__sorted-by-price">Цене</button>
+        <button class="search-result__angle"></button>
+        <button class="search-result__sorted-by-age">Возрасту</button>
+        <button class="search-result__angle"></button>
       </div>
+      <div class="search-result__cards">
+        <template id="card-template">
+          <div class="card">
+            <div class="card__image-box">
+              <img class="card__image" src="" alt="фото котика">
+              <div class="card__sale"></div>
+              <div class="card__like"></div>
+            </div>
+            <div class="card__info-box">
+              <h4 class="card__title"></h4>
+              <div class="card__about">
+                <div class="card__about-color">
+                  <div class="card__line"></div>
+                  <div class="card__color"></div>
+                </div>
+                <div class="card__about-age">
+                  <div class="card__age"></div>
+                  <p class="card__subtitle">Возраст</p>
+                </div>
+                <div class="card__about-paws">
+                  <div class="card__paws"></div>
+                  <p class="card__subtitle">Кол-во лап</p>
+                </div>
+              </div>
+              <p class="card__price"></p>
+              <button class="button button__card">Купить</button>
+            </div>
+          </div>
+        </template>
+      </div>
+      <button class="search-result__show-more">Показать еще 20</button>
+      <button class="search-result__up"></button>
     </main>
+    <footer class="footer">
+      <div class="footer__box">
+        <div class="footer__info">
+          <h2 class="footer__title">Успей купить!</h2>
+          <p class="footer__subtitle">Подпишись и успей словить все акции</p>
+        </div>
+        <form class="footer__form">
+          <input class="footer__form-email" placeholder="Email"
+            pattern="^([a-zA-Z0-9]+[-_.]*[a-zA-Z0-9]+|[a-zA-Z0-9]+)@[-a-zA-Z0-9]+\.[a-zA-Z.]{2,}$" />
+          <button class="button button__footer">Подписаться</button>
+          <div class="footer__other">
+            <button class="footer__subscribe"></button>
+            <p class="footer__text">Подписаться на новости</p>
+          </div>
+        </form>
+      </div>
+    </footer>
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>

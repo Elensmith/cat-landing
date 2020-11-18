@@ -1,0 +1,7 @@
+.footer__text {
+  grid-column-start: 2;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+}

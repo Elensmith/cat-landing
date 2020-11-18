@@ -1,0 +1,32 @@
+.search-result__cards {
+    padding-top: 2.313rem;
+    padding-bottom: 4.25rem;
+    display: grid;
+    align-items: center;
+    gap: 1.313rem;
+    grid-row-gap: 1.438rem;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+@media screen and (max-width: 1190px) {
+    .search-result__cards  {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-self: center;
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .search-result__cards  {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-result__cards  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

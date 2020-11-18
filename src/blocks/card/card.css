@@ -1,0 +1,31 @@
+@import url(./__about/card__about.css);
+@import url(./__age/card__age.css);
+@import url(./__color/card__color.css);
+@import url(./__image-box/card__image-box.css);
+@import url(./__info-box/card__info-box.css);
+@import url(./__like/card__like.css);
+@import url(./__line/card_line.css);
+@import url(./__paws/card__paws.css);
+@import url(./__price/card__price.css);
+@import url(./__sale/card__sale.css);
+@import url(./__subtitle/card__subtitle.css);
+@import url(./__title/card__title.css);
+@import url(./__image/card__image.css);
+@import url(./__about-age/card__about-age.css);
+@import url(./__about-color/card__about-color.css);
+@import url(./__about-paws/card__about-paws.css);
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F3F3;
+  max-width: 23.75rem;
+  height: 32.563rem;
+  position: relative;
+}
+
+@media screen and (max-width: 468px) {
+  .card {
+    max-width: 20rem;
+  }
+}

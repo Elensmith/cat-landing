@@ -1,0 +1,17 @@
+.search-result__up {
+  position: absolute;
+  background-image: url(../../../images/up-button.png);
+  width: 3.688rem;
+  height: 3.688rem;
+  right: 0;
+  bottom: 3.063rem;
+  cursor: pointer;
+  outline: none;
+}
+
+
+@media screen and (max-width: 694px) {
+  .search-result__up  {
+    bottom: 1rem;
+  }
+}

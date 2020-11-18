@@ -1,0 +1,6 @@
+.card__line {
+  background-image: url(../../../images/line.png);
+  width: 0.25rem;
+  height: 1.625rem;
+  /* padding-right: 1.125rem; */
+}

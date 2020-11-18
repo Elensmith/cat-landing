@@ -1,6 +1,27 @@
 .header__menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 1.625rem 8.188rem 2.25rem 8.188rem ;
+  padding-top: 1.3rem;
+  padding-bottom:  2.25rem;
+  max-width: 73.75rem;
+  margin: auto;
+}
+
+@media screen and (max-width: 1190px) {
+  .header__menu  {
+    max-width: 60rem;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .header__menu  {
+    max-width: 45rem;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .header__menu  {
+    flex-wrap: wrap;
+    max-width: 30rem;
+  }
 }

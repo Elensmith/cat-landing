@@ -1,8 +1,29 @@
-.heared__buttons {
+.header__buttons {
   display: grid;
   grid-gap: 4.625rem;
   grid-auto-flow: column;
   list-style-type: none;
-  padding: 0;
+  padding-left: 7.5rem;
   align-content: center;
+}
+
+@media screen and (max-width: 914px) {
+  .header__buttons {
+    grid-gap: 2.5rem;
+    padding-left: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 764px) {
+  .header__buttons {
+    padding-left: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 694px) {
+  .header__buttons{
+    grid-gap: 1rem;
+  }
 }

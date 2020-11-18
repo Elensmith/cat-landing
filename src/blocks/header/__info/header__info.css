@@ -3,4 +3,11 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-left: auto
+}
+
+@media screen and (max-width: 468px) {
+  .header__info  {
+    margin: auto;
+  }
 }

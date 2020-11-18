@@ -1,7 +1,15 @@
+@import url(./__footer/button__footer.css);
+@import url(./__card/button__card.css);
+
 .button {
-  color: #FFFFFF;
+  background-color: #6ebbd3;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.125em;
-  text-decoration: none;
-  margin: 0;
+  font-size: 1em;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 0.625rem;
+  width: 23.75rem;
+  height: 4.063rem;
+  outline: none;
+  cursor: pointer;
 }

@@ -1,0 +1,14 @@
+@import url(./_active/card__like_active.css);
+
+.card__like {
+  position: absolute;
+  width: 2.875rem;
+  height: 2.875rem;
+  background-image: url(../../../images/like-normal.png);
+  right: 2rem;
+  top: 2.125rem;
+}
+
+.card__like:hover {
+  background-image: url(../../../images/like-active.png);
+}

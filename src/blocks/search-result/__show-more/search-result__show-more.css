@@ -1,0 +1,24 @@
+.search-result__show-more {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  width: 23.75rem;
+  height: 4.063rem;
+  background-color: #e5e5e5;
+  border: 1px solid #cacaca;
+  border-radius: 0.625rem;
+  margin-bottom: 5.188rem;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-result__show-more:hover {
+  background-color: #d9d9d9;
+}
+
+@media screen and (max-width: 468px) {
+  .search-result__show-more {
+    max-width: 20rem;
+  }
+}

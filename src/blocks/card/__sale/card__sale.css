@@ -1,0 +1,18 @@
+@import url(./_on/card__sale_on.css);
+
+.card__sale {
+  position: absolute;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  top: 2.125rem;
+  left: 2.375rem;
+  line-height: 2.438rem;
+  height: 2.438rem;
+  width: 4.875rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  background-color: #e52d2d;
+  display: none;
+}

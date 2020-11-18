@@ -1,0 +1,7 @@
+.footer__subscribe.footer__subscribe_active {
+  background-image: url(../../../../images/add-empty.png);
+  /* z-index: ; */
+  width: 1.125rem;
+  height: 1.125rem;
+  /* grid-column-start: 1; */
+}
