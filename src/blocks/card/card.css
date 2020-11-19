@@ -18,7 +18,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #F3F3F3;
+  /* background-color: #f3f3f3; */
   max-width: 23.75rem;
   height: 32.563rem;
   position: relative;

@@ -1,6 +1,6 @@
-.card__iamage-box {
-height: 16.5rem;
-max-width: 23.75rem;
-background-color: lightgrey;
+.card__image-box {
+/* height: 16.5rem;
+max-width: 23.75rem; */
+background-color: #f3f3f3;
 position: relative;
 }

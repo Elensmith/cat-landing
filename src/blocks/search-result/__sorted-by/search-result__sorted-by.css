@@ -9,6 +9,7 @@
 
 @media screen and (max-width: 694px) {
   .search-result__sorted-by  {
+    padding-bottom: 1rem;
     padding-right: 1rem;
   }
 }

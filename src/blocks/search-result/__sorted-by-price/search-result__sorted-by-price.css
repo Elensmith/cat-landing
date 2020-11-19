@@ -8,3 +8,9 @@
   outline: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 694px) {
+  .search-result__sorted-by-price {
+    padding-bottom: 0.625rem;
+  }
+}
